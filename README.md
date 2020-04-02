@@ -31,4 +31,10 @@ To locate the street, neighborhood and others, the "[API  Via Cep](http://viacep
 	<version>1.3</version>
 	<type>pom</type>
 </dependency>
+
+<dependency>
+	<groupId>com.github.gilberto-torrezan</groupId>
+	<artifactId>viacep</artifactId>
+	<version>1.2.0</version>
+</dependency>
 ```
