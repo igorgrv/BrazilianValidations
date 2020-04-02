@@ -1,4 +1,6 @@
 # Brazilian validations
+**All the credits for the [Alura's course](https://www.alura.com.br/planos-cursos-online)**
+
 ## About the project
 
 This project aims to **validate/format Brazilian standards**, such as:
@@ -6,6 +8,12 @@ This project aims to **validate/format Brazilian standards**, such as:
 * Currency
 * Numbers in full (155 = one hundred and fifty-five)
 * Documents (CPF and CNPJ)
+* Zip Code
+
+### Zip Code
+To locate the street, neighborhood and others, the "[API  Via Cep](http://viacep.com.br/)" was used, which was consumed via REST, using JAX-RS and Jersey.
+
+
 
 ## Download
 ```
