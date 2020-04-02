@@ -11,9 +11,30 @@ This project aims to **validate/format Brazilian standards**, such as:
 * Zip Code
 
 ### Zip Code
-To locate the street, neighborhood and others, the "[API  Via Cep](http://viacep.com.br/)" was used, which was consumed via REST, using JAX-RS and Jersey.
+To locate the street, neighborhood and others, I used the"[API  Via Cep](http://viacep.com.br/)".
+**How to use?**
+It's pretty much simple, we have to:
+1. Inserting into the pom.xml the viacep dependency;
+2. Creat the client;
+3. Send the ZipCode into the "getEndereco";
+4. Request the infos that you need;
 
+```
+public class ZipCode {
 
+	public static void main(String[] args) {
+		ViaCEPClient client = new ViaCEPClient();
+		try {
+			ViaCEPEndereco address = client.getEndereco("05143120");
+			System.out.println("State: " + address.getUf());
+			System.out.println("Neighborhood: " + address.getBairro());
+			System.out.println("Street: " + address.getLogradouro());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
 
 ## Download
 ```
@@ -30,11 +51,5 @@ To locate the street, neighborhood and others, the "[API  Via Cep](http://viacep
 	<artifactId>moneta</artifactId>
 	<version>1.3</version>
 	<type>pom</type>
-</dependency>
-
-<dependency>
-	<groupId>com.github.gilberto-torrezan</groupId>
-	<artifactId>viacep</artifactId>
-	<version>1.2.0</version>
 </dependency>
 ```
