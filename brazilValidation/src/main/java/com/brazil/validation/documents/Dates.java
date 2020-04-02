@@ -12,6 +12,7 @@ public class Dates {
 		System.out.println(today);
 		//2020-04-02
 
+		//To know more about patterns: https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
 		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		System.out.println(today.format(dateFormatter));
 		//02/04/2020
