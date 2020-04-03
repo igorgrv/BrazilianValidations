@@ -19,7 +19,7 @@ It's pretty much simple, we have to:
 3. Send the ZipCode into the "getEndereco";
 4. Request the infos that you need;
 
-```
+```java
 public class ZipCode {
 
 	public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class ZipCode {
 ```
 
 ## Download
-```
+```java
 <!-- https://github.com/caelum/caelum-stella/wiki/Download -->
 <dependency>
 	<groupId>br.com.caelum.stella</groupId>
