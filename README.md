@@ -14,7 +14,7 @@ This project aims to **validate/format Brazilian standards**, such as:
 To locate the street, neighborhood and others, I used the"[API  Via Cep](http://viacep.com.br/)".
 **How to use?**
 It's pretty much simple, we have to:
-1. Inserting into the pom.xml the viacep dependency;
+1. Inserting intIDE the pom.xml the viacep dependency (Downlaod below);
 2. Creat the client;
 3. Send the ZipCode into the "getEndereco";
 4. Request the infos that you need;
@@ -51,5 +51,11 @@ public class ZipCode {
 	<artifactId>moneta</artifactId>
 	<version>1.3</version>
 	<type>pom</type>
+</dependency>
+
+<dependency>
+	<groupId>com.github.gilberto-torrezan</groupId>
+	<artifactId>viacep</artifactId>
+	<version>1.2.0</version>
 </dependency>
 ```
